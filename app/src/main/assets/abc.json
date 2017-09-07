@@ -1,0 +1,47 @@
+{
+  "version": 8,
+  "name": "(c) Mapion",
+  "sources": {
+    "simple-tiles": {
+      "tileSize": 128,
+      "type": "raster",
+      "attribution": "",
+      "autoscale": true,
+      "bounds": [
+        -180,
+        -85,
+        180,
+        85
+      ],
+      "center": [
+        0,
+        0,
+        3
+      ],
+      "maxzoom": 19,
+      "minzoom": 2,
+      "name": "Mapion",
+      "private": true,
+      "scheme": "xyz",
+      "tilejson": "2.0.0",
+      "tiles": [
+        "https://cm01.mapion.co.jp/m2/tile/{z}/{x}/{y}.png?usr=mapihd",
+        "https://cm02.mapion.co.jp/m2/tile/{z}/{x}/{y}.png?usr=mapihd"
+      ],
+      "webpage": "https://www.mapion.co.jp/"
+    }
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "paint": {
+      "background-color": "#d3d3d3"
+    }
+  }, {
+    "id": "simple-tiles",
+    "type": "raster",
+    "source": "simple-tiles",
+    "minzoom": 2,
+    "maxzoom": 19
+  }]
+}
